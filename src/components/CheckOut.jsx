@@ -2,7 +2,7 @@ import { AliwangwangOutlined, CheckCircleOutlined, ShopOutlined, TrophyOutlined 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-function ProceedCart(){
+function CheckOut(){
     return(
 <div>
     <div>
@@ -15,17 +15,15 @@ function ProceedCart(){
         alt="" 
     />
     <h1 className="absolute inset-0 flex items-center justify-center text-6xl font-medium text-black">
-    Cart 
+    Checkout 
    </h1>
     <h1 className="absolute inset-0 flex items-center justify-center text-2xl font-normal text-black top-36">Home{'>'}
-        <span className="text-gray-700">Cart</span>
+        <span className="text-gray-700">Checkout</span>
     </h1>
 </div>
-<div>
-    <div></div>
-</div>
-<div className="container flex flex-wrap justify-around py-6 bg-pink-50">
-    <div className="flex items-center p-5">
+
+<div className="container flex flex-wrap justify-around py-6 bg-purple-100">
+    <div className="flex items-center">
         <TrophyOutlined className="text-5xl text-gray-950" />
         <div className="ml-6">
             <h1 className="text-xl font-semibold fpy-3 text-gray-950">High Quality</h1>
@@ -61,4 +59,4 @@ function ProceedCart(){
 </div>
     )
 }
-export default  ProceedCart;
+export default  CheckOut;

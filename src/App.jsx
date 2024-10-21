@@ -5,7 +5,10 @@ import About from "./About";
 import Contact from "./Contact";
 import Product from "./components/Product";
 import ProductCard from "./components/ProductCard";
-import Cart from "./components/Cart";
+import Cart from "./components/AddToCart";
+import ProductComparision from "./components/productComaprision";
+import ProceedCart from "./components/Cart";
+import CheckOut from "./components/CheckOut";
 
 function App(){
   return (
@@ -16,6 +19,9 @@ function App(){
       <Route path="/about" element={<About />}/>
       <Route path="/contact" element={<Contact />}/>
       <Route path="/product" element={<Product />}/>
+      <Route path="/comparison" element={<ProductComparision />}/>
+      <Route path="/proceedcart" element={<ProceedCart />}/>
+      <Route path="/Checkout" element={<CheckOut />}/>
       <Route path="/cart" element={<Cart />}/>
       <Route path="/product:id" element={<ProductCard />}/>
     </Routes>
