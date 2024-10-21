@@ -1,13 +1,20 @@
 import { AliwangwangOutlined, CheckCircleOutlined, ShopOutlined, TrophyOutlined } from "@ant-design/icons";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import { Link } from "react-router-dom";
 
 function ProceedCart(){
+    const { cartItem, removeItemFromCart, addItemToCart, lessItemToCart } = useContext(CartContext);
+  const totalAmount = cartItem.reduce((total, obj) => total + obj.quantity * obj.price, 0);
+  const totalQuantity = cartItem.reduce((total, obj) => total + obj.quantity, 0);
     return(
 <div>
     <div>
         <Navbar/>
     </div>
+   
         <div className="container relative flex justify-between p-3">
     <img 
         className="w-full h-96 opacity-45" 
@@ -21,9 +28,12 @@ function ProceedCart(){
         <span className="text-gray-700">Cart</span>
     </h1>
 </div>
-<div>
-    <div></div>
-</div>
+
+<div className="flex h-20 gap-2 my">
+        <div>Product</div>
+      
+      </div>
+
 <div className="container flex flex-wrap justify-around py-6 bg-pink-50">
     <div className="flex items-center p-5">
         <TrophyOutlined className="text-5xl text-gray-950" />

@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Shop from "./Shop";
-import About from "./About";
 import Contact from "./Contact";
 import Product from "./components/Product";
 import ProductCard from "./components/ProductCard";
@@ -9,6 +8,7 @@ import Cart from "./components/AddToCart";
 import ProductComparision from "./components/productComaprision";
 import ProceedCart from "./components/Cart";
 import CheckOut from "./components/CheckOut";
+import Blog from "./Blog";
 
 function App(){
   return (
@@ -16,7 +16,7 @@ function App(){
     <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/shop" element={<Shop />}/>
-      <Route path="/about" element={<About />}/>
+      <Route path="/blog" element={<Blog />}/>
       <Route path="/contact" element={<Contact />}/>
       <Route path="/product" element={<Product />}/>
       <Route path="/comparison" element={<ProductComparision />}/>

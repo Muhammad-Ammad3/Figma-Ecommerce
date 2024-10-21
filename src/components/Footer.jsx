@@ -23,7 +23,7 @@ function Footer(){
         <Link to={'/Shop'} className="text-lg font-semibold text-gray-800 hover:text-blue-500">Shop</Link>
     </div>
     <div className="w-full md:w-1/2">
-        <Link to={'/About'} className="text-lg font-semibold text-gray-800 hover:text-blue-500">About</Link>
+        <Link to={'/blog'} className="text-lg font-semibold text-gray-800 hover:text-blue-500">Blog</Link>
     </div>
     <div className="w-full md:w-1/2">
         <Link to={'/Contact'} className="text-lg font-semibold text-gray-800 hover:text-blue-500">Contact</Link>
@@ -36,13 +36,13 @@ function Footer(){
     <p className="text-gray-400">Help</p>
     <div className="flex flex-col flex-wrap py-4">
         <div className="w-full mb-2 md:w-1/2">
-            <Link to={"/"} className="text-lg font-semibold text-gray-800 hover:text-blue-500">Payment Option</Link>
+            <Link to={"#"} className="text-lg font-semibold text-gray-800 hover:text-blue-500">Payment Option</Link>
         </div>
         <div className="w-full mb-2 md:w-1/2">
-            <Link to={'/Shop'} className="text-lg font-semibold text-gray-800 hover:text-blue-500">Return</Link>
+            <Link to={'#'} className="text-lg font-semibold text-gray-800 hover:text-blue-500">Return</Link>
         </div>
         <div className="w-full mb-2 md:w-1/2">
-            <Link to={'/About'} className="text-lg font-semibold text-gray-800 hover:text-blue-500">Privacy Policies</Link>
+            <Link to={'#'} className="text-lg font-semibold text-gray-800 hover:text-blue-500">Privacy Policies</Link>
         </div>
     </div>
 </div>

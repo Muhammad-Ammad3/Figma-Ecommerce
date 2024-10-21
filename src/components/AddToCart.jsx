@@ -7,7 +7,6 @@ import Footer from "./Footer";
 import ProductCard from "./ProductCard";
 import ProductData from "./ProductData";
 import { Link } from "react-router-dom";
-import CheckOut from "./CheckOut";
 import ProductComparision from "./productComaprision";
 import ProceedCart from "./Cart";
 
@@ -72,11 +71,7 @@ function Cart() {
     Remove Item
   </button>
   <Link to={'/proceedcart'}>
-  <button onClick={ProceedCart}
-    className="flex items-center justify-center w-32 px-4 py-2 text-yellow-700 transition duration-200 border border-yellow-700 rounded-lg hover:bg-yellow-700 hover:text-white"
-    >
-     Cart
-  </button>
+ 
     </Link>
   <Link to={'/comparison'}>
     <button 

@@ -29,7 +29,7 @@ const {cartItem,addItemToCart} = useContext(CartContext)
         <div className="hidden space-x-8 md:flex">
           <Link to={"/"} className="text-lg text-gray-600 hover:text-blue-500">Home</Link>
           <Link to={'/Shop'} className="text-lg text-gray-600 hover:text-blue-500">Shop</Link>
-        <Link to={'/About'} className="text-lg text-gray-600 hover:text-blue-500">About</Link>
+        <Link to={'/blog'} className="text-lg text-gray-600 hover:text-blue-500">Blog</Link>
         <Link to={'/Contact'} className="text-lg text-gray-600 hover:text-blue-500">Contact</Link>
         </div>
 

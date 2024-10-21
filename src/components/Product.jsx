@@ -51,7 +51,7 @@ function Products() {
                     {moreProduct < filteredProducts.length && (
                         <div className="my-4 text-center">
                             <button 
-                                className="px-4 py-2 text-yellow-700 bg-transparent border border-yellow-700 w-44 hover:bg-gray-100" 
+                                className="px-4 py-2 text-yellow-700 bg-transparent border border-yellow-700 w-44 hover:bg-yellow-700 hover:text-white" 
                                 onClick={showMoreProduct}
                             >
                                 Show More
