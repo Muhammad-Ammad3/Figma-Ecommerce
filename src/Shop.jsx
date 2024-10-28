@@ -9,17 +9,19 @@ function Shop(){
         <Navbar/>
         <div className="container relative flex justify-between p-3">
     <img 
-        className="w-full h-96 opacity-45" 
+        className="w-full h-96 object-cover opacity-45" 
         src="https://dlifeinteriors.com/wp-content/uploads/2020/05/Living-room-design-3bhk-flat-kochi.jpg" 
         alt="" 
     />
-    <h1 className="absolute inset-0 flex items-center justify-center text-6xl font-medium text-black">
+    <h1 className="absolute inset-0 flex items-center justify-center text-4xl sm:text-5xl md:text-6xl font-medium text-black">
         Shop
     </h1>
-    <h1 className="absolute inset-0 flex items-center justify-center text-2xl font-normal text-black top-36">Home{'>'}
-        <span className="text-gray-700">Shop</span>
+    <h1 className="absolute inset-0 flex items-center justify-center text-lg sm:text-xl md:text-2xl font-normal text-black top-36">
+        Home {'>'}
+        <span className="text-gray-700"> Shop</span>
     </h1>
 </div>
+
 <div>
     <Products/>
 </div>

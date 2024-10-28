@@ -19,7 +19,7 @@ function ProductCard({ data }) {
 
     return (
         <div className="ml-1">
-        <div className="relative flex flex-col w-full h-full max-w-xs p-4 mx-auto overflow-hidden transition-colors duration-300 bg-gray-100 rounded-lg shadow-md group">
+        <div className="relative flex flex-col w-full max-w-xs p-4 mx-auto overflow-hidden transition-colors duration-300 bg-gray-100 rounded-lg shadow-md group">
             <Image
                 preview={false}
                 height={250}

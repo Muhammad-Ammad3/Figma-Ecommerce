@@ -25,16 +25,20 @@ function Home(){
 
 <div className="relative">
     <img
-        className="w-full min-h-72"
+        className="w-full min-h-[300px] object-cover"
         src="https://img.freepik.com/premium-photo/scandinavian-interior-mockup-wall-decal-background_1961-259.jpg"
+        alt="Interior"
     />
-    <div className="absolute w-full p-4 text-center transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:w-2/6 bg-orange-50">
-        <h1 className="text-xl font-semibold text-black">New Arrival</h1>
-        <span className="text-2xl font-bold text-yellow-300 md:text-5xl">Discover Our <br /> New Collection</span>
-        <p className="font-semibold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam <br />magnam rem dolores vitae nihil</p>
-        <button className="w-40 h-10 mt-4 text-white bg-yellow-700">Buy Now</button>
+    <div className="absolute w-full p-4 text-center transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:w-2/6 bg-orange-50 rounded-lg shadow-lg">
+        <h1 className="text-lg md:text-xl font-semibold text-black">New Arrival</h1>
+        <span className="text-2xl md:text-4xl font-bold text-yellow-300">Discover Our <br /> New Collection</span>
+        <p className="font-semibold text-black text-sm md:text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam <br />magnam rem dolores vitae nihil
+        </p>
+        <button className="w-32 h-10 mt-4 text-white bg-yellow-700 rounded hover:bg-yellow-600 transition duration-300">Buy Now</button>
     </div>
 </div>
+
 
 <div className="px-4 py-4 text-center">
     <h1 className="p-3 text-3xl font-bold text-gray-700">Browse The Range</h1>
@@ -56,18 +60,19 @@ function Home(){
             img: "https://www.decoraid.com/wp-content/uploads/2021/04/striped-bedroom-wallpaper-2206x2500.jpeg"
         }
     ].map((item, index) => (
-        <div className="w-full p-2 text-center sm:w-1/3 md:w-1/4" key={index}>
+        <div className="w-full p-2 text-center sm:w-1/2 md:w-1/3 lg:w-1/4" key={index}>
             <Image
-                className="w-full rounded-xl"
-                width={300}
-                height={450}
-                preview={false}
+            height={500}
+            preview={false}
+                className="w-full h-96 rounded-xl"
                 src={item.img}
+                alt={item.title}
             />
-            <h1 className="text-xl font-bold text-gray-800">{item.title}</h1>
+            <h1 className="text-xl font-bold text-gray-800 mt-2">{item.title}</h1>
         </div>
     ))}
 </div>
+
 
 <div className="flex justify-center py-4 ">
     <h1 className="p-3 text-3xl font-bold text-gray-700">Our Products</h1>
@@ -88,56 +93,57 @@ function Home(){
             <ImageSlider />
         </div>
 
-<div className="py-6 mx-auto text-center">
+        <div className="py-6 mx-auto text-center">
     <h1 className="text-xl font-semibold text-gray-600">Share your setup with</h1>
     <h1 className="py-4 text-5xl font-bold text-gray-800">#FuniroFurniture</h1>
 </div>
+
 <div className="container p-4 mx-auto">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                <div className="col-span-1 sm:col-span-2 lg:col-span-1">
-                    <img
-                        className="object-cover w-full rounded-lg h-60"
-                        src="https://plus.unsplash.com/premium_photo-1706140675031-1e0548986ad1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGl2aW5ncm9vbXxlbnwwfHwwfHx8MA%3D%3D"
-                        alt="Gallery Image 1"
-                    />
-                </div>
-                <div className="col-span-1 sm:col-span-1 lg:col-span-2">
-                    <img
-                        className="object-cover w-full rounded-lg h-80"
-                        src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2023/7/19/3/DOTY2023_Dramatic-Before-And-Afters_Hidden-Hills-11.jpg.rend.hgtvcom.1280.960.suffix/1689786863909.jpeg"
-                        alt="Gallery Image 2"
-                    />
-                </div>
-                <div className="col-span-1 sm:col-span-1 lg:col-span-1">
-                    <img
-                        className="object-cover w-full rounded-lg h-60"
-                        src="https://st.hzcdn.com/simgs/97910d6b0407c3d1_14-0485/_.jpg"
-                        alt="Gallery Image 3"
-                    />
-                </div>
-                <div className="col-span-1 sm:col-span-2 lg:col-span-1">
-                    <img
-                        className="object-cover w-full rounded-lg h-60"
-                        src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2023/7/19/3/DOTY2023_Dramatic-Before-And-Afters_Hidden-Hills-11.jpg.rend.hgtvcom.1280.960.suffix/1689786863909.jpeg"
-                        alt="Gallery Image 4"
-                    />
-                </div>
-                <div className="col-span-1 sm:col-span-1 lg:col-span-2">
-                    <img
-                        className="object-cover w-full rounded-lg h-80"
-                        src="https://hips.hearstapps.com/hmg-prod/images/living-room-2-left-663155189da31.jpg?crop=0.750xw:1.00xh;0,0&resize=980:*"
-                        alt="Gallery Image 5"
-                    />
-                </div>
-                <div className="col-span-1 sm:col-span-1 lg:col-span-1">
-                    <img
-                        className="object-cover w-full rounded-lg h-60"
-                        src="https://hips.hearstapps.com/hmg-prod/images/melanie-pounds-mountain-brook-house-tour-living-room-fireplace-jpg-1623351404.jpg?crop=0.732xw:1.00xh;0.128xw,0&resize=1120:*"
-                        alt="Gallery Image 6"
-                    />
-                </div>
-            </div>
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="col-span-1 sm:col-span-2 lg:col-span-1">
+            <img
+                className="object-cover w-full rounded-lg h-60 sm:h-72 lg:h-80"
+                src="https://plus.unsplash.com/premium_photo-1706140675031-1e0548986ad1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGl2aW5ncm9vbXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Gallery Image 1"
+            />
         </div>
+        <div className="col-span-1 sm:col-span-1 lg:col-span-2">
+            <img
+                className="object-cover w-full rounded-lg h-80"
+                src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2023/7/19/3/DOTY2023_Dramatic-Before-And-Afters_Hidden-Hills-11.jpg.rend.hgtvcom.1280.960.suffix/1689786863909.jpeg"
+                alt="Gallery Image 2"
+            />
+        </div>
+        <div className="col-span-1 sm:col-span-1 lg:col-span-1">
+            <img
+                className="object-cover w-full rounded-lg h-60 sm:h-72 lg:h-80"
+                src="https://st.hzcdn.com/simgs/97910d6b0407c3d1_14-0485/_.jpg"
+                alt="Gallery Image 3"
+            />
+        </div>
+        <div className="col-span-1 sm:col-span-2 lg:col-span-1">
+            <img
+                className="object-cover w-full rounded-lg h-60 sm:h-72 lg:h-80"
+                src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2023/7/19/3/DOTY2023_Dramatic-Before-And-Afters_Hidden-Hills-11.jpg.rend.hgtvcom.1280.960.suffix/1689786863909.jpeg"
+                alt="Gallery Image 4"
+            />
+        </div>
+        <div className="col-span-1 sm:col-span-1 lg:col-span-2">
+            <img
+                className="object-cover w-full rounded-lg h-80"
+                src="https://hips.hearstapps.com/hmg-prod/images/living-room-2-left-663155189da31.jpg?crop=0.750xw:1.00xh;0,0&resize=980:*"
+                alt="Gallery Image 5"
+            />
+        </div>
+        <div className="col-span-1 sm:col-span-1 lg:col-span-1">
+            <img
+                className="object-cover w-full rounded-lg h-60 sm:h-72 lg:h-80"
+                src="https://hips.hearstapps.com/hmg-prod/images/melanie-pounds-mountain-brook-house-tour-living-room-fireplace-jpg-1623351404.jpg?crop=0.732xw:1.00xh;0.128xw,0&resize=1120:*"
+                alt="Gallery Image 6"
+            />
+        </div>
+    </div>
+</div>
 <div>
     <Footer/>
 </div>

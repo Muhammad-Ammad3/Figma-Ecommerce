@@ -3,27 +3,27 @@ import React, { useState, useEffect } from 'react';
 const ImageSlider = () => {
     const images = [
         {
-            src: 'https://s3-alpha-sig.figma.com/img/f89a/66d9/4961c3801f4c07439f27b13468e5e545?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cODEA1bY4akRpfqv1587rc-pMB6GVOARCkqw2UK38F6I1Xq-Ss-8sXIM07WBbuxBX9Cc0LM5Sgsi7~pk5Wyq3WzFVO46XkaahA4Pmnd8D1bH1vUT76wJ6WLJbafWztuznKjqZc058wrLbrDNrgPYhSaV~sGTiA2arWqAITW-xhg-m8eSR65L3kckDmE3BXwwLlKn44Kln7EfGtm-aps7~67RVBrgHn~X62FYOQlK0Ts8YEiciRUd9hFRPuoQZoRKL-w3lUyhVI3WUHB8s0IhSyR7TwRicEs7cNK-OrLIcyOaKZlDFGC7xGAWbbHtTUqGnrm8cPy37zt5jdo62ro2CQ__',
+            src: 'https://s3-alpha-sig.figma.com/img/3740/8e44/4bdba3a6bef9d68df2d9a06e32e96c61?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oCrdAUhTV222FyFLUoCNvwDeRHxQD~pwTH9bDEPo3HWxVlXFNXgXbz2f0IwDqqAJqpr06SCJ7R~riEncNSeNWjtWWvyVlbr1oa7CKHh9viTvbpOp4bERpVIvy8el~xk-lk4XwlUMDBUBrP22L9gLGHFPiHeagz4Jnvp7atGuYR4yKaeXwMYZuROYzRV29S-GvzHwqLLXENChS~KNnO6Qcv7wXI8RzXx7X28LAbgUs0x~65ZTrlZSWPPcjxmEjpvsJYeAXITX04fMKA9ZntdIqep6ipL1KaPQ4CcuQqh9ido0cIXCNuUbjKqOUebSAAJhjvTNFTw9CHdbCyXy6G4nYA__',
             alt: 'Image 1',
         },
         {
-            src: 'https://s3-alpha-sig.figma.com/img/acc4/8179/d1b18b523420e79dda1e92951ecde49b?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Mi-RmAxTufdhS2rE5RVadS6zUrGGuR1nD~DWNhj~hDs8lz9LfZK1Td67YUwVqEgx3ImnPNKebraoDUvI3XWf1QR4nsc8LRwiD7gjzseoxuib4P51Sc~xg7Qxbq-BjcyNSulD0~71HqTV7cNiS4bMPazRN-gBxHxJUe5Bs75G7Qki8sjWghASfDzqNO0v9E0ZlIMv~LbtaH~lixdbsuGwcv9unIhmO4GYFRpTxRlPvwCZNnHEA2JymJYGIlWeFEuIvsDruEjX-AwK0vkBx5Pt9Dqn05prVRa6vrro8tihF8xrl1eFpj3nYSJFuC4okN~TUZj-TJo8e4fxeshiz3pbFw__',
+            src: 'https://s3-alpha-sig.figma.com/img/b7e3/92a7/f3961ca2b1edab00f7a7640b3c2ed666?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mC8i~0f-kRzW5JsP29rItAx8iLklFpFxTPOd6klFJLz5E-Rkkd4baoJtxV9eYn7I1Qwf3BAhNsuqj7r94Jtoiz2UCkZzhqeepfkpzvF08IUmW9Lx1ZWHi-~~yPLb2Av~XNQ5qdZeWrowzwxRHyg2vbL4BwIPZrdvEuQaHx1ySTmZSTppeOvp1uqduc-IYT7MlXggg30JpoHvX2QgLZZB02FpuUmH0Fo1JSbpJM~sX9AnjlgLHtYHOvN7gbnxL3gjnm9kX2ty9469kpEA6cNTSR8cBeL4xoXn5pyY5WPOTQNG59jGuD1nMnciR8q~dhVlPWJnMhBDwmDFk7psSwBhDw__',
             alt: 'Image 2',
         },
         {
-            src: 'https://s3-alpha-sig.figma.com/img/7065/5e8b/25a06a33769af9bf5fe8f8ed81ce75d8?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j9T10BCLZpM54mCaIPEfMpJYpA1lYeLiuPjB-kkj9xVe519I3mm-0WH5UNg7dyFfPuG25CmbYYfvRLDmH8sZE7Ha~Mxzy1SHPtikdFthvGqy-bLhCo~RJAlO~rqocGGggYKjecsAUIVac6yqTewRxOji2kmRL8EbiY6rJHoXelV0LHgXVh-5k6DovCPx9ps7iBm~NPXbiNOzgVqZ7iDiGzo0JCkuXnizzcLLv7ItGDWABCaB-JKozN-KFjn8VInj4Q2aU4ONKhqBk1tarJEEdVB1D0-Vi-5Smw5~--UEurnCorNctF9IuGMaOq3RzGViOwMBE6lm-HxhX9kr8fmh0g__',
+            src: 'https://s3-alpha-sig.figma.com/img/77e4/946e/ec6e291e21c9694ce22e6c5b50d777fe?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RavgO~1jQlqAxNukq8i4pS~Z9C9FsRlxCjSAufpfEm8GSB8O2J~qRuMp0mdO3pXMIU2d9QQXmv3FROFR6ppAmjgpJsj7w-1FnhVazFICOQgAhK97mMAfY8F-NlqmdGd103F~V67H-uh~SSEuTnaxhMft7I73oAjFCL00MPW3uwakzMwMKy75P29YCVo5SDlhVuCcGu5TT5AjEq47VAW8D7Czd24FlGOLQnWTGmXdnegFcL-DPV6KzMZuUN6VqHybKkemLcQEkPFAaTwLUOgJ7hg0o4Y52tcdsYVoMOedGNgeWJmwyNrU2-yjXV8tBznlHWJadi~cEE3-Rio9271jwA__',
             alt: 'Image 3',
         },
         {
-            src: 'https://s3-alpha-sig.figma.com/img/9532/f812/360b02673b349021a24f23d4184b4e15?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ppzqQSu~v3pqtmdNH~nzckjJxMNC8mmSu~h7pE9kB4QLw9ndFkMd8nzjibH28TCDMMmCNam2cSvjrTht19tbA-riB122EaYhWPtYzJV1hlWyC7f2fE0RqFpYv453~xSWuVuseSrucNobsm~RCB6-S3CnMQIETCJvSt5pFfpPvd33I-nLt~kpZHAlOOPg5JQYljGdr~WEC1B45kUZRrt1of0Icy~DTS~r40WFnu9pc7RApJEIalYK9UlPoSPy-4huqXeqNRtz0POH~QfJdzcim2AN6hGhXPORgDlsFCXM4uGUlLAP98BeKj8j4mpa5rF2Vz-eKOnTe8kVaB2mmR561g__',
+            src: 'https://s3-alpha-sig.figma.com/img/f89a/66d9/4961c3801f4c07439f27b13468e5e545?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VXFiA7W7IeKXS7AvtyCdeycPs7a5lOQUvEhHPGMi3w8kr8F~a99COCsIfMYGMXkcpL5J6yOLCd0SAD-ZxnPedrfi78NEpcksTE-uIsgIlISq5Ag9ayra-pNDshr5hyJ5VzriY9ZloCtIGupu6oIDw2IWjKXyLKwRFJCF6iBHQo17PAMFKk3zfJebtUhfR13RB3U2cp5U0D8asqqey60umdZp1THIOwxrRTYLzRUrBxkzTOOwQDPQZwYitHFIJ6g0NQqsdTyIGNT-vTHgK06ohEnlnGeVE~4YfmmZzEVfLWmE3-CicJRXJdfJbWaESF4gu6U~n3I1wh3kmTlAl1m~sw__',
             alt: 'Image 4',
         },
         {
-            src: 'https://s3-alpha-sig.figma.com/img/e8ee/1dc9/413c23f2d7371be94a52ea9020db45cc?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dT~6ozGxRBF~7dAoeDpJ4A7rbzum~OmQ1p1XAFcC2orCjPDaUCWv~pCNabiDPWRqC3XC3SLUn0f~AhCsUkkNIqi-WJuzU0pUscuYGYvMEjTop7qxxIA-fdIbtUlKkpvJPlzLkqCp2nwBhj4MazCOUwPPXyCf7OYOYPonBJ4eMAH1hUvNxvMjnAYGn7vlnwX0T1djVQbVmoMRrSEkGcIS1GmD~TORgjfYL-cLHFcOUu0Pm5efVyAFbSA-0BcHoAZ2B-bcbXREfACDQ-TlUsY8bjonc11Nu5wmgD3~wFFYG7GyODYdaadNdSRGORd5nMdgRzsYoJEaBOerskc-xbayUg__',
+            src: 'https://s3-alpha-sig.figma.com/img/acc4/8179/d1b18b523420e79dda1e92951ecde49b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RwOmAn0NTP1hmZNtOrVQb9PRHAvy27JUkjKUMrekbGkkRsdxGYRn548hyeRjqaOOSa6Cl~JdjQFsENkq5OUPkiTDvW94q6QCrGvR2vD6obLnJDysyqSJCc4yJQ4dly3JRqMBEEC2JUpb3Kn5XCSrvLabEDK5Ge66OOYoUh88Vagq9qmv27m03SMulBxZ3oHUigzRIsdZ6SaGHEfASX1KuDbqeckpNWndc0IG9OkZ-MPFWHSgnQ4fmQv-KfdA8-OQZnYA~mlzoTJorX7dcLIHafZx8tn5fzbNBN0UTbE2ECtWLmooAIHa3xJIZLdLUQHQdSFN7n3bFkdtE0ASCe9J3g__',
             alt: 'Image 4',
         },
         {
-            src: 'https://s3-alpha-sig.figma.com/img/057c/3bab/f9de6c6ff643cd2e7661215ad26aed46?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ha9nrXGpUKTieolEUBMaW3BR2X0xFwbFKqVeQEQFEfMd66-qMLg4Uyx~Go26Le4vP6pa24aTSRLqF4VnJOrIU-RAUbi-h4uqtEXbcXNwt~LVsCMMvi~vbf54e1AEz8Zwig8RClgLxLlGD2iuUjFtafWW-nW91zSwJRj3wEXNxSI-3uXe1l3Mtr-i~2nQVGwFlwjdDBwANZqA120uoVt7dVfOBvaQvw3MchYf3DxXUgp1MOgxZRjYwc~lHgkosFIO1Ib1XzwtPZXfIuC4XRpGXai7MyE8WW2NSnrHCFQg6ZpNoo2mlc7RezF1cLuYWlUkLFLM4XCP1R2E5A4p3iGibA__',
+            src: 'https://s3-alpha-sig.figma.com/img/7065/5e8b/25a06a33769af9bf5fe8f8ed81ce75d8?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RntuviU9ALfTHFntdottkUoTlDb0zpYaz14lEF8oEbgKHkvh-54hrs0-k6kNv7HrygiFv6oGShtbcKen7-bkJoyG4QYn4WUoHi2~qhJEySvqDKW0clUYJyCIhvwwNlsmlJbYkWsKYKmZGYcDDPWrNYnpBZ9a5mLSpN-KoeEFrY6vYvnZSkO-EITK-6~KpCpTFQXRB~GpzUgIAQrS90ZnHlXDSXTdsTNV2MzIfQoTXyis-BVbqPX4AIlSNM8pAXthWVboCgmTNsxQ4zItQBGKvky6MEdTlSNcs-mTaRhuRLcbCZ4j7PUSIE7kI9d-Kn5a5pkG3-uC2uRcyvzlf8303g__',
             alt: 'Image 4',
         },
     ];
@@ -47,27 +47,27 @@ const ImageSlider = () => {
     };
 
     return (
-        <div className='bg-purple-50'>
+<div className='bg-purple-50'>
+    <div className="relative w-full h-[70vh] overflow-hidden"> {/* Adjusted height to fit various devices */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center p-5 w-full max-w-md">
+            <h2 className="text-gray-700 text-3xl md:text-4xl font-bold">50+ Beautiful Rooms <br /> Inspiration</h2>
+            <p className="text-lg md:text-2xl text-gray-500">Our designer already made a lot of beautiful <br /> prototypes of rooms that inspire you</p>
+            <button className="w-40 h-10 mt-4 text-white bg-yellow-600 hover:bg-yellow-500 transition duration-300">Explore More</button>
+        </div>
+        <img
+            className="w-full h-full object-cover transition-opacity duration-500"
+            src={images[currentIndex].src}
+            alt={images[currentIndex].alt}
+        />
+        <button onClick={prevSlide} className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-yellow-700 rounded-full p-2 hover:bg-purple-100">
+            &#10094; 
+        </button>
+        <button onClick={nextSlide} className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-yellow-700 rounded-full p-2 hover:bg-purple-100">
+            &#10095; 
+        </button>
+    </div>
+</div>
 
-        <div className="relative w-full h-svh overflow-hidden">
-            <div className="absolute top-72 items-center justify-center h-full w-1/3 p-5 ">
-                <h2 className="text-gray-700 text-4xl font-bold">50+ Beautiful Rooms <br /> Inspiration</h2>
-                <p className="text-2xl text-gray-500">Our designer already made a lot of beautiful <br /> prototypes of rooms that inspire you</p>
-                <button className="w-40 h-10 mt-4 text-white bg-yellow-600">Explore More</button>
-            </div>
-            <img
-                className="w-full h-auto object-cover transition-opacity duration-500"
-                src={images[currentIndex].src}
-                alt={images[currentIndex].alt}
-            />
-            <button onClick={prevSlide} className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white ml-96 text-yellow-700 rounded-full p-2 hover:bg-purple-100">
-                &#10094; 
-            </button>
-            <button onClick={nextSlide} className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-yellow-700 border rounded-full p-2 hover:bg-purple-100">
-                &#10095; 
-            </button>
-        </div>
-        </div>
     );
 };
 
