@@ -1,5 +1,5 @@
 import Footer from "./components/Footer"
-import { AliwangwangOutlined, CheckCircleOutlined, ClockCircleFilled, EnvironmentOutlined, PhoneFilled, PhoneOutlined, ShopOutlined, TrophyOutlined } from "@ant-design/icons";
+import { AliwangwangOutlined, CheckCircleOutlined, ClockCircleFilled, EnvironmentOutlined, PhoneFilled, ShopOutlined, TrophyOutlined } from "@ant-design/icons";
 import Navbar from "./components/Navbar"
 import ContactForm from "./components/contactForm";
 
@@ -32,8 +32,8 @@ function Contact(){
     </div>
 
     <div className="flex flex-col md:flex-row justify-around items-start max-w-6xl mx-auto px-4">
-        <div className="flex flex-col items-center text-center mb-10">
-            <EnvironmentOutlined className="text-5xl mb-2 hover:text-yellow-700" />
+        <div className="flex flex-col items-center text-center mb-10 hover:text-yellow-700">
+            <EnvironmentOutlined className="text-5xl mb-2 " />
             <h1 className="font-normal text-xl">Address</h1>
             <p className="text-gray-600">
                 236 5th SE Avenue, New
@@ -41,16 +41,16 @@ function Contact(){
                 <br /> States
             </p>
         </div>
-        <div className="flex flex-col items-center text-center mb-10">
-            <PhoneFilled className="text-5xl mb-2 hover:text-yellow-700" />
+        <div className="flex flex-col items-center text-center mb-10 hover:text-yellow-700">
+            <PhoneFilled className="text-5xl mb-2 " />
             <h1 className="font-normal text-xl">Phone</h1>
             <p className="text-gray-600">
                 Mobile: +(84) 546-6789
                 <br /> Hotline: +(84) 456-6789
             </p>
         </div>
-        <div className="flex flex-col items-center text-center mb-10">
-            <ClockCircleFilled className="text-5xl mb-2 hover:text-yellow-700" />
+        <div className="flex flex-col items-center text-center mb-10 hover:text-yellow-700">
+            <ClockCircleFilled className="text-5xl mb-2 " />
             <h1 className="font-normal text-xl">Working Time</h1>
             <p className="text-gray-600">
                 Monday-Friday: 9:00

@@ -8,6 +8,7 @@ import ProductCard from "./ProductCard";
 import ProductData from "./ProductData";
 import { Link } from "react-router-dom";
 import ProductComparision from "./productComaprision";
+import SideCart from "./SideCart";
 
 function Cart() {
   const { cartItem, removeItemFromCart, addItemToCart, lessItemToCart } = useContext(CartContext);
@@ -22,6 +23,7 @@ function Cart() {
     const filteredRelatedProducts = ProductData.filter(product => categories.includes(product.category));
     setRelatedProducts(filteredRelatedProducts);
   }, [cartItem]);
+  
 
   return (
 <div className="container mx-auto my-5">
@@ -74,6 +76,11 @@ function Cart() {
                                         className="flex items-center w-32 px-4 py-2 text-yellow-700 transition duration-200 border border-yellow-700 rounded-lg hover:bg-yellow-700 hover:text-white"
                                     >
                                         Remove Item
+                                    </button>
+                                    <button
+                                    onClick={()=> SideCart}
+                                    className="flex items-center w-32 px-4 py-2 text-yellow-700 transition duration-200 border border-yellow-700 rounded-lg hover:bg-yellow-700 hover:text-white">
+                                        Cart
                                     </button>
                                     <Link to={'/comparison'}>
                                         <button 
